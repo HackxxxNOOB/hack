@@ -1,0 +1,15 @@
+local Games = {
+    ["XMAS Event | Funky Friday"] = {
+        ID = 6447798030 ;
+        Name = "https://raw.githubusercontent.com/HackxxxNOOB/Funky-Friday1/main/hook" ;
+    } ; 
+    ["Blox Fruits"] = {
+        ID = 2753915549 ;
+        Name = "https://raw.githubusercontent.com/HackxxxNOOB/hook/main/README.md"
+    }
+}
+
+for i ,v in pairs(Games) do 
+    if v.ID ~= game.GameId then continue end ;
+    loadstring(game:HttpGet(v.Name))() ;
+end ;
